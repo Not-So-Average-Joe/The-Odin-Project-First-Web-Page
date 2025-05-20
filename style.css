@@ -16,6 +16,7 @@
 
 body {
     font-family: Roboto, sans-serif;
+    background-color: #fff;
 }
 
 .logo {
@@ -33,6 +34,7 @@ body {
     margin-top: 30px;
     margin-right: 50px;
     z-index: 1000;
+    mix-blend-mode: difference;
 }
 
 .navbar li {
@@ -127,7 +129,7 @@ body {
 .image img{
     width: 75%;
     border-radius: 20px;
-    border: 3px solid var(--action);
+    border: 5px solid var(--action);
 }
 
 .container.images {
@@ -135,17 +137,103 @@ body {
 }
 
 .container.image {
-    flex: 25%;
+    flex: 20%;
     float: center;
     text-align: center;
 }
 
 .image-p {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
+.info-p {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
+.container.testimonial {
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+    background-color: var(--link-quote-background);
+}
 
-.container {
-    border: 1px dotted #000;
+.testimonial-paragraph {
+    width: 1000px;
+    text-align: center;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-text);
+}
+
+.author {
+    float: right;
+    margin-right: 700px;
+    font-size: 25px;
+}
+
+.container.sign-up {
+    width: 100%;
+    height: 200px;
+    color: var(--header-text);
+}
+
+.container.call-action {
+    width: 65%;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--action);
+    border-radius: 20px;
+}
+
+.container.call-action button {
+    position: relative;
+    width: 125px;
+    height: 40px;
+    background-color: var(--action);
+    color: var(--header-text);
+    border: 2px solid var(--header-text);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    float: right;
+    right: 200px;
+    bottom: 40px;
+}
+
+.container.call-action button:hover {
+    background-color: var(--header-text);
+    color: var(--action);
+}
+
+.call-action h4, .call-action p {
+    width: 50%;
+    margin-left: 100px;
+    
+
+}
+
+.call-action h4 {
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 40px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--dark-background);
+    color: var(--header-text);
+    text-align: center;
+    padding-top: 40px;
 }
